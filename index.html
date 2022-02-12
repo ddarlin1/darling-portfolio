@@ -5,6 +5,7 @@
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="title" content="Dani Darling Front End Developer Portfolio" />
       <title>Dani Darling | Portfolio</title>
       <link rel="stylesheet" href="css/normalize.css">
       <link rel="stylesheet" href="css/styles.css">  
@@ -14,21 +15,183 @@
 
    <body>
       <header>
-         <h1></h1>
-         <nav>
-            <ul>
-               <li></li>
-            </ul>
-         </nav>
+         <div class="content-wrapper">
+            <nav>
+               <ul>
+                  <li><a href="projects/index.html"></a>Projects</li>
+                  <li><a href="skills/index.html"></a>Skills</li>
+                  <li><a href="about/index.html"></a>About</li>
+                  <li><a href="connect/index.html"></a>Connect</li>
+               </ul>
+            </nav>
+            <div class="home-title">
+               <h1>Dani Darling</h1>
+               <!-- Image or logo? -->
+               <h2>Front End Developer</h2>
+            </div>  
+         </div>
       </header>
 
       <main>
-         <section>
-         </section>
-         
-         <footer>
-         </footer>
-      </main>
-   </body>
+         <article class="portfolio">
+            <section id="work">
+               <div class="content-wrapper">
+                  <h3>Projects</h3>
+                  <div class="portfolio-wrapper">
+                     <div class="portfolio-piece">
+                        <figure>
+                           <a href="https://3h0hn.csb.app/" target="_blank">
+                              <img src="img/sticky-notes-app.jpg" alt="sticky note app" />
+                           </a>
+                        </figure>
+                        <h4>Sticky Note App</h4>
+                        <p class="project-description">
+                           An interactive React app Greenfield project that lets users create "sticky notes" with the
+                           ability to add, edit, delete and search their to-do list items.
+                        </p>
+                        <p>
+                           <span>Skills: </span>
+                           React, JSX, ES6, Data Flow, DOM Manipulation, Local Storage
+                        </p>
+                     </div>
+                     <div class="portfolio-piece">
+                        <figure>
+                           <a href="https://ddarlin1.github.io/gems-quiz/" target="_blank">
+                              <img src="img/gem-quiz.jpg" alt="gem quiz" />
+                           </a>
+                        </figure>
+                        <h4>Gem Quiz</h4>
+                        <p class="project-description">
+                           A personal Greenfield project site that displays a random gem, or searches the database
+                           for user-selected criteria, to promote healing.
+                        </p>
+                        <p>
+                           <span>Skills: </span>
+                           JavaScript, Flexbox, Clone Node, Data Flow, For Loops, CSS Animation
+                        </p>
+                     </div>
+                     <div class="portfolio-piece">
+                        <figure>
+                           <a href="https://ddarlin1.github.io/github-repo-gallery/" target="_blank">
+                              <img src="img/github-repo-gallery.jpg" alt="github repo gallery" />
+                           </a>
+                        </figure>
+                        <h4>GitHub Repo Gallery</h4>
+                        <p class="project-description">
+                           A customized responsive gallery of my repositories using GitHub's API to pull data from my
+                           GitHub profile. Visitors to the site can click on any repo to see more details.
+                        </p>
+                        <p>
+                           <span>Skills: </span>
+                           JavaScript, APIs, Loops, DOM Manipulation, CSS Animation
+                        </p>
+                     </div>
+                     <div class="portfolio-piece">
+                        <figure>
+                           <a href="https://ddarlin1.github.io/guess-the-word/" target="_blank">
+                              <img src="img/guess-the-word.jpg" alt="guess the word" />
+                           </a>
+                        </figure>
+                        <h4>Guess the Word Game</h4>
+                        <p class="project-description">
+                           An interactive JavaScript game where players guess the word by entering one letter at a
+                           time. If the player guesses all the letters correctly in eight guesses, they win!
+                        </p>
+                        <p>
+                           <span>Skills: </span>
+                           JavaScript, Responsive Design, DOM Manipulation, Loops
+                        </p>
+                     </div>
+                     <div class="portfolio-piece">
+                        <figure>
+                           <a href="https://ddarlin1.github.io/unplugged-project/" target="_blank">
+                              <img src="img/unplugged.jpg" alt="unplugged project" />
+                           </a>
+                        </figure>
+                        <h4>Unplugged</h4>
+                        <p class="project-description">
+                           A 3-page responsive website built from a Photoshop design comp that adapts to mobile,
+                           tablet, and desktop screens.
+                        </p>
+                        <p>
+                           <span>Skills: </span>
+                           Flexbox, Responsive Typography, Photoshop, Media Queries
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </article>
 
+         <section id="skills">
+            <div class="content-wrapper">
+               <h3>Skills</h3>
+               <div class="language-wrapper">
+                  <ul> <!-- Icons -->
+                     <li>HTML5</li>
+                     <li>CSS3</li>
+                     <li>JavaScript</li>
+                     <li>React</li>
+                     <li>Git</li>
+                     <li>GitHub</li>
+                  </ul>
+               </div>
+               <div class="tool-wrapper">
+                  <ul>
+                     <li>Adobe Creative Suite</li>
+                     <li>Chrome DevTools</li>
+                     <li>CodeSandbox</li>
+                     <li>Flexbox</li>
+                     <li>FTP & Web Hosting</li>
+                     <li>Responsive Design</li>
+                     <li>Visual Studio Code</li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+
+         <section id="about">
+            <div class="content-wrapper">
+               <h3>About</h3>
+               <figure>
+                  <img src="img/dd-clear.jpg" alt id="profile-image">
+               </figure>
+               <p class="about-text">
+                  Hi there, I’m Dani Darling! I’m a Front End Developer who is passionate about building 
+                  functional websites that are also delightful to use. As a committed life-long learner, 
+                  I find the prospect of ever-evolving coding languages and frameworks to be an exciting 
+                  opportunity to continuously challenge myself, problem-solve, be creative, and collaborate.
+                  Right now, I'm looking for my next team! <br>
+                  If I’m not coding, I’m likely reading a speculative fiction novel, singing Broadway tunes, or out hiking in the middle of the woods.
+               </p>
+            </div>
+         </section>
+      </main>
+
+      <footer id="connect">
+         <div class="content-wrapper">
+            <h3>Let's Connect</h3>
+            <div class="contact-wrapper">
+               <div class="contact-info">
+                  <h5 class="contact-title">Hire me</h5>
+                  <p>646-379-1649</p>
+                  <p>ddarling212@gmail.com</p>
+               </div>
+               <div class="contact-info follow">
+                  <h5 class="contact-title">Follow me</h5>
+                  <ul class="social-icons">
+                     <li>LinkedIn</li>
+                     <li>GitHub</li>
+                  </ul>
+               </div>
+               <div class="contact-info">
+                  <h5 class="contact-title">Meet me</h5>
+                  <p>New York City</p>
+                  <p>Let's meet for coffee (virtually or IRL)!</p>
+               </div>
+            </div>
+            <p>Copyright 2022 | Dani Darling</p>
+         </div>
+      </footer>
+   </body>
 </html>
