@@ -1,0 +1,112 @@
+:root {
+    --light-blue: #89c9ff;
+    --light-gray: #899bb4;
+    --pale-green: #7aa2af;
+    --blue: #334b71;
+    --brown: #9d9d9d;
+    --dark-gray: #788da3;
+    --rose: #a378a2;
+}
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+    color: #222;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+body {
+    font-size: 1em;
+    width: 100%;
+}
+
+.content-wrapper {
+    width: 85%;
+    margin: 20px;
+}
+
+/* HEADER */
+header, footer {
+    background-color: var(--blue);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .content-wrapper {
+    width: 100%;
+    margin-top: 0px;
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li {
+    padding: 3%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.home-title {
+    margin: 5%;
+}
+
+.home-title i {
+    font-size: 32px;
+}
+
+/* Projects */
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#work img {
+    width: 70%;
+    margin: auto;
+}
+
+/* Skills */
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tool-wrapper li {
+    list-style-type: none;
+}
+
+/* About */
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about img {
+    width: 65%;
+}
