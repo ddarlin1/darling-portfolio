@@ -302,16 +302,21 @@ ul li a:hover {
     padding: 1em;
 }
 
+#skills i {
+    color: var(--light-blue);
+}
+
+#skills i[title]:hover {
+    content: attr(title);
+    position: initial;
+}
+
 #skills a {
     font-size: initial;
 }
 
 #skills a i:hover {
     color: var(--rose);
-}
-
-#skills i {
-    color: var(--light-blue);
 }
 
 /* Projects */
@@ -367,6 +372,11 @@ footer .contact-info {
     width: 60%;
 }
 
+footer span {
+    color: var(--light-blue);
+    padding: 3px;
+}
+
 footer .contact-info follow {
     display: flex;
     justify-content: center;
@@ -396,4 +406,49 @@ footer .social-icons li {
 
 .copyright {
     color: var(--light-blue);
+}
+
+/* -------- Contact Form -------- */
+
+.contact-form {
+    padding: 1.75em;
+    width: 95%;
+}
+
+form {
+    padding: .25em;   
+    text-align: center;
+}
+
+form input, form textarea {
+    border: 1px white solid;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 1em auto;
+    padding-left: 5px;
+    width: 95%;
+    height: 2em;
+}
+
+form #message {
+    height: 10em;
+}
+
+form ::placeholder {
+    color: var(--dark-gray);
+    padding-top: 2px;
+}
+
+#contact-form button {
+    background-color: var(--light-blue);
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    width: 60%;
+    padding: 5px;
+    font-size: 1.25em;
+}
+
+#contact-form button:hover {
+    background-color: var(--rose);
 }
