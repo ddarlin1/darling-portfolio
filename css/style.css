@@ -168,7 +168,60 @@ ul li a i {
     color: #89c9ff;
 }
 
-/* ---------- HOMEPAGE ---------- */
+/* --- Alternate Title Text Scroll --- */
+.i-title {
+    height: 50px;
+    overflow: hidden;
+}
+
+.i-title-wrapper {
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    25%{
+        transform:translateY(-50px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    75%{
+        transform: translateY(-150px);
+    }
+    100%{
+        transform: translateY(-200px);
+    }
+}
+
+.i-title-item {
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--rose);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------- INTRO TITLE -------- */
+
+/* Intro Photo */
+.i-photo {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.i-photo img {
+    border-radius: 50% !important;
+    object-fit: cover;
+    border-style: 5px solid var(--rose);
+    overflow: hidden;
+    box-shadow: 0 0 0 5px rgba(250, 250, 250);
+}
+
+/* ----------------- HOMEPAGE ----------------- */
 /* Projects */
 #work {
     background-color: var(--pale-green);
