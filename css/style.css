@@ -108,11 +108,23 @@ header, footer {
     width: 100%;
 }
 
+header {
+    background: url("../img/bg-1.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+header .content-wrapper {
+    background: rgba(51, 75, 113, 0.97);
+    border-radius: 5%;
+}
+
+
 /* Nav Open Button */
 .toggle {
     background: #89c9ff;
     outline: 0;
-    padding: 8px 15px;
+    margin-top: 15px;
+    padding: 10px 15px;
     color: #fff;
     border: 0;
     border-radius: 5px;
@@ -209,7 +221,7 @@ ul li a i {
 }
 
 ul li a:hover {
-    color: var(--rose);
+    color: var(--light-blue);
 }
 
 /* --- Alternate Title Text Scroll --- */
@@ -270,8 +282,28 @@ ul li a:hover {
 }
 
 #profile-image {
-    width: 65%;
+    width: 125px;
 }
+
+.home-title {
+    padding-bottom: 30px;
+}
+
+.header-icons {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-icons i {
+    color: #fff;
+}
+
+.header-icons i:hover {
+    color: var(--light-blue);
+}
+
 
 /* ----------------- HOMEPAGE ----------------- */
 /* About */
@@ -281,6 +313,15 @@ ul li a:hover {
 
 #about-photo {
     border-radius: 15px;
+}
+
+#about img {
+    border-radius: 50% !important;
+    object-fit: cover;
+    border-style: 5px solid #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px rgba(250, 250, 250);
+    width: 250px;
 }
 
 .about-text span {
@@ -326,6 +367,7 @@ ul li a:hover {
 
 #work h4 {
     color: var(--light-blue);
+    margin-bottom: -2px;
 }
 
 #work span {
