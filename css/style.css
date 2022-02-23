@@ -1,10 +1,7 @@
 :root {
-    --light-blue: #89c9ff;
-    --light-gray: #899bb4;
-    --pale-green: #7aa2af;
     --blue: #334b71;
-    --brown: #9d9d9d;
     --dark-gray: #788da3;
+    --light-blue: #89c9ff;
     --rose: #a378a2;
 }
 
@@ -21,8 +18,9 @@ html {
 
 body {
     background-color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    /* Alt font Arial sans-serif */
 }
 
 ul, 
@@ -38,10 +36,12 @@ a {
 }
 
 h1 {
+    font-family: 'Roboto Serif', sans-serif;
     font-size: 2.35rem;
 }
 
 h2 {
+    font-family: 'Roboto Serif', sans-serif;
     font-size: 1.85rem;
 }
 
@@ -313,6 +313,10 @@ ul li a:hover {
     background-color: var(--rose);
 }
 
+#about .content-wrapper {
+    width: 75%;
+}
+
 #about-photo {
     border-radius: 15px;
 }
@@ -327,7 +331,8 @@ ul li a:hover {
 }
 
 .about-text span {
-    color: var(--light-blue)
+    color: var(--light-blue);
+    font-family: 'Roboto Serif', sans-serif;
 }
 
 /* Skills */
@@ -520,6 +525,10 @@ form ::placeholder {
         margin-top: -50px;
     }
 
+    #about-photo {
+        margin-top: 10px;
+    }
+
     footer .contact-info {
         width: 50%;
     }
@@ -567,10 +576,18 @@ form ::placeholder {
 
     #about figure {
         width: 50%;
+        margin-right: 30px;
     }
 
     .about-text {
         width: 50%;
+        margin-left: 15px;
+
+    }
+
+    #about img {
+        width: 350px;
+        height: auto;
     }
 
     .portfolio-wrapper {
