@@ -152,6 +152,7 @@ header .content-wrapper {
     right: 0;
     transition: 0.2s ease-in-out;
     display: none;
+    z-index: 9999;
 }
 
 .open-nav {
@@ -290,10 +291,11 @@ ul li a:hover {
 }
 
 .header-icons {
-    padding-top: 30px;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 0;
 }
 
 .header-icons i {
@@ -493,4 +495,95 @@ form ::placeholder {
 
 #contact-form button:hover {
     background-color: var(--rose);
+}
+
+/* ----------------------------------  MEDIA QUERIES ----------------- */
+/* ---------- TABLET ---------- */
+
+@media only screen and (min-width: 768px) {
+    
+    header .content-wrapper {
+        margin: 25px;
+        padding: 25px;
+        width: 70%;
+    }
+    .menu-content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 5px 20px;
+    }
+
+    #profile-image {
+        width: 175px;
+        height: auto;
+        margin-top: -50px;
+    }
+
+    footer .contact-info {
+        width: 50%;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column wrap;
+        margin: 0;
+    }
+
+    footer .social-icons i {
+        padding-bottom: 30px;
+    }
+}
+
+/* ---------- DESKTOP ---------- */
+@media only screen and (min-width: 1200px) {
+
+    header .content-wrapper {
+        margin: 45px;
+        width: 65%;
+    }
+
+    .home-title {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #profile-image {
+        width: 225px;
+    }
+
+    .home-name {
+        margin-right: 20px;
+    }
+
+    #about .half-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    #about figure {
+        width: 50%;
+    }
+
+    .about-text {
+        width: 50%;
+    }
+
+    .portfolio-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .portfolio-piece {
+        width: 47%;
+    }
+
+    .contact-form {
+        width: 70%;
+    }
 }
