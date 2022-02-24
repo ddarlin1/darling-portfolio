@@ -80,6 +80,26 @@ i {
     color: var(--rose);
 }
 
+#scroll-button {
+    display: none;
+    position: fixed;
+    bottom: 2.75em;
+    right: 2.75%;
+    z-index: 9999;
+    border: 2px solid var(--blue);
+    outline: none;
+    background-color: rgba(247, 243, 244, 0.65);
+    color: var(--blue);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 1em;
+}
+
+#scroll-button:hover {
+    background-color: var(--light-blue);
+}
+
 /* Structural Styles */
 header, 
 #work, 
@@ -112,6 +132,9 @@ header {
     background: url("../img/bg-1.jpg") no-repeat center fixed;
     background-size: cover;
 }
+
+/* Background photo by Clément Hélardot
+ https://unsplash.com/photos/95YRwf6CNw8 */
 
 header .content-wrapper {
     background: rgba(51, 75, 113, 0.97);
@@ -506,6 +529,10 @@ form ::placeholder {
 /* ---------- TABLET ---------- */
 
 @media only screen and (min-width: 768px) {
+
+    #scroll-button {
+        padding: 25px;
+    }
     
     header .content-wrapper {
         margin: 25px;
@@ -547,6 +574,10 @@ form ::placeholder {
 
 /* ---------- DESKTOP ---------- */
 @media only screen and (min-width: 1200px) {
+
+    #scroll-button {
+        padding: 30px;
+    }
 
     header .content-wrapper {
         margin: 45px;
