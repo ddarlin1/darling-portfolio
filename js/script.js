@@ -25,6 +25,10 @@ const backdrop = document.querySelector('.backdrop');
 toggle.addEventListener('click', () => nav.classList.add('open-nav'));
 backdrop.addEventListener('click', () => nav.classList.remove('open-nav'));
 
+function closeNav() {
+    nav.classList.remove('open-nav');
+}
+
 // contact form - clear text upon submission
 const btn = document.querySelector('.btn');
 const messageForm = document.getElementById('message');
