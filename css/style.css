@@ -140,13 +140,13 @@ header {
 
 header .content-wrapper {
     background: rgba(51, 75, 113, 0.97);
-    border-radius: 5%;
+    border-radius: 10%;
 }
 
 
 /* Nav Open Button */
 .toggle {
-    background: #89c9ff;
+    background: var(--light-blue);
     outline: 0;
     margin-top: 15px;
     padding: 10px 15px;
@@ -289,13 +289,11 @@ ul li a:hover {
 /* -------- INTRO TITLE -------- */
 
 #home i {
-    color: #a378a2;
+    color: var(--rose);
 }
 
 /* Intro Photo */
 .i-photo {
-    display: flex;
-    justify-content: center;
     margin: 30px;
 }
 
@@ -338,7 +336,7 @@ ul li a:hover {
 }
 
 #about .content-wrapper {
-    width: 75%;
+    width: 70%;
 }
 
 #about-photo {
@@ -355,12 +353,17 @@ ul li a:hover {
 
 .about-text span {
     color: var(--light-blue);
+    font-size: 1.1em;
     font-family: 'Roboto Serif', sans-serif;
 }
 
 /* Skills */
 #skills {
     background-color: var(--blue);
+}
+
+#skills .content-wrapper {
+    width: 80%;
 }
 
 .language-wrapper ul {
@@ -416,20 +419,24 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 25px;
 }
 
 .portfolio-piece figure {
-    filter: drop-shadow(1px 3px 6px lightgrey);
+    filter: drop-shadow(1px 2px 3px gray);
 }
 
 .portfolio-piece figure:hover {
-    transform: scale(1.07);
-    filter: drop-shadow(0px 1px 3px plum);
+    transform: scale(1.02);
+}
+
+.portfolio-piece figure img {
+    border-radius: 5px;
+    width: 97%;
 }
 
 .project-description {
-    width: 95%;
+    width: 90%;
 }
 
 /* ---------- FOOTER ---------- */
@@ -449,27 +456,9 @@ footer span {
     padding: 3px;
 }
 
-footer .contact-info follow {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
 footer .social-icons {
     display: flex;
     justify-content: space-around;
-}
-
-footer ul {
-    width: 100%;
-}
-
-footer .social-icons li {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #connect a i:hover {
@@ -494,10 +483,9 @@ form {
 
 form input, form textarea {
     border: 1px white solid;
-    border-radius: 5px;
+    border-radius: 10px;
     display: block;
-    margin: 0 auto 1em auto;
-    padding-left: 5px;
+    margin: 1em;
     width: 95%;
     height: 2em;
 }
@@ -509,20 +497,23 @@ form #message {
 form ::placeholder {
     color: var(--dark-gray);
     padding-top: 2px;
+    padding-left: 5px;
 }
 
 #contact-form button {
-    background-color: var(--light-blue);
-    border-radius: 5px;
+    background-color: var(--rose);
+    border-radius: 10px;
     color: #fff;
+    font-weight: 900;
     border: none;
-    width: 60%;
-    padding: 5px;
+    width: 50%;
+    margin: .25em;
+    padding: 15px 0 15px 0;
     font-size: 1.25em;
 }
 
 #contact-form button:hover {
-    background-color: var(--rose);
+    background-color: var(--light-blue);
 }
 
 /* ----------------------------------  MEDIA QUERIES ----------------- */
@@ -566,6 +557,13 @@ form ::placeholder {
     footer .social-icons i {
         padding-bottom: 30px;
     }
+
+    #full-name, 
+    #email-address {
+        display: inline;
+        width: 46.25%;
+        margin: 3px;
+    }
 }
 
 /* ---------- DESKTOP ---------- */
@@ -586,8 +584,12 @@ form ::placeholder {
         align-items: center;
     }
 
+    .i-photo {
+        padding-left: 15px;
+    }
+
     #profile-image {
-        width: 225px;
+        width: 240px;
     }
 
     .home-name {
@@ -629,5 +631,10 @@ form ::placeholder {
 
     .contact-form {
         width: 70%;
+    }
+
+    #full-name, 
+    #email-address {
+        margin: 5px;
     }
 }
