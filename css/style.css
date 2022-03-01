@@ -1,8 +1,9 @@
 :root {
-    --blue: #334b71;
-    --dark-gray: #788da3;
-    --light-blue: #89c9ff;
-    --rose: #a378a2;
+    --blue: #1b365d;
+    --dark-gray: #4d4d5a;
+    --light-blue: #41b6e6;
+    --rose: #5d3754;
+    --highlight: #d6d2c4;
 }
 
 /* General styles */
@@ -44,6 +45,7 @@ h1 {
 h2 {
     font-family: 'Roboto Serif', sans-serif;
     font-size: 1.85rem;
+    padding: 2px 5px 0 5px;
 }
 
 h3 {
@@ -75,10 +77,6 @@ img {
 
 figure {
     margin: 0;
-}
-
-i {
-    color: var(--rose);
 }
 
 #scroll-button {
@@ -139,7 +137,7 @@ header {
  https://unsplash.com/photos/95YRwf6CNw8 */
 
 header .content-wrapper {
-    background: rgba(51, 75, 113, 0.97);
+    background: rgba(27, 54, 93, 0.95);
     border-radius: 10%;
 }
 
@@ -161,7 +159,7 @@ header .content-wrapper {
 
 .toggle:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    background: var(--rose);
+    background: var(--highlight);
 }
 
 .toggle i {
@@ -190,7 +188,7 @@ header .content-wrapper {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.93);
+    background: rgba(0, 0, 0, 0.96);
     cursor: pointer;
     animation: fadeIn 0.2s ease-in-out forwards;
 }
@@ -235,7 +233,7 @@ ul li:last-child {
 /* Item links styles and hover effects */
 ul li a {
     text-decoration: none;
-    color: #ccc;
+    color: #fff;
     font-size: 3em;
     font-weight: 900;
     text-transform: uppercase;
@@ -280,7 +278,7 @@ ul li a:hover {
     height: 50px;
     font-size: 30px;
     font-weight: bold;
-    color: var(--rose);
+    color: var(--light-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,7 +287,7 @@ ul li a:hover {
 /* -------- INTRO TITLE -------- */
 
 #home i {
-    color: var(--rose);
+    color: var(--light-blue);
 }
 
 /* Intro Photo */
@@ -352,9 +350,7 @@ ul li a:hover {
 }
 
 .about-text span {
-    color: var(--light-blue);
     font-size: 1.1em;
-    font-family: 'Roboto Serif', sans-serif;
 }
 
 /* Skills */
@@ -390,7 +386,7 @@ ul li a:hover {
 }
 
 #skills a i:hover {
-    color: var(--rose);
+    color: var(--highlight);
 }
 
 /* Projects */
@@ -404,7 +400,7 @@ ul li a:hover {
 }
 
 #work span {
-    color: var(--light-blue);
+    font-weight: 900;
 }
 
 .portfolio-wrapper {
@@ -423,7 +419,7 @@ ul li a:hover {
 }
 
 .portfolio-piece figure {
-    filter: drop-shadow(1px 2px 3px gray);
+    filter: drop-shadow(1px 2px 2px gray);
 }
 
 .portfolio-piece figure:hover {
@@ -461,8 +457,11 @@ footer .social-icons {
     justify-content: space-around;
 }
 
-#connect a i:hover {
+#connect i {
     color: var(--light-blue);
+}
+#connect a i:hover {
+    color: var(--highlight);
 }
 
 .copyright {
@@ -501,9 +500,9 @@ form ::placeholder {
 }
 
 #contact-form button {
-    background-color: var(--rose);
+    background-color: var(--light-blue);
     border-radius: 10px;
-    color: #fff;
+    color:var(--blue);
     font-weight: 900;
     border: none;
     width: 50%;
@@ -513,7 +512,7 @@ form ::placeholder {
 }
 
 #contact-form button:hover {
-    background-color: var(--light-blue);
+    background-color: var(--highlight);
 }
 
 /* ----------------------------------  MEDIA QUERIES ----------------- */
@@ -541,6 +540,18 @@ form ::placeholder {
 
     #about-photo {
         margin-top: 10px;
+    }
+
+    #about img {
+        width: 275px;
+    }
+
+    #skills i {
+        font-size: 6em;
+    }
+
+    #skills ul li {
+        padding: 1em 3em 0 3em;
     }
 
     footer .contact-info {
