@@ -1,8 +1,7 @@
 :root {
-    --blue: #1b365d;
+    --blue: #42386B;   /* purple */
     --dark-gray: #4d4d5a;
     --light-blue: #41b6e6;
-    --rose: #5d3754;
     --highlight: #d6d2c4;
 }
 
@@ -19,7 +18,7 @@ html {
 }
 
 body {
-    background-color: #fff;
+    background-color: lightgray;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     /* Alt font Arial sans-serif */
@@ -112,7 +111,7 @@ footer {
 }
 
 .content-wrapper {
-    width: 85%;
+    width: 80%;
     margin: 15px 0;
     max-width: 1200px;
 }
@@ -137,7 +136,7 @@ header {
  https://unsplash.com/photos/95YRwf6CNw8 */
 
 header .content-wrapper {
-    background: rgba(27, 54, 93, 0.95);
+    background: rgba(66, 56, 107, 0.95);
     border-radius: 10%;
 }
 
@@ -330,7 +329,7 @@ ul li a:hover {
 /* ----------------- HOMEPAGE ----------------- */
 /* About */
 #about {
-    background-color: var(--rose);
+    background-color: var(--dark-gray);
 }
 
 #about .content-wrapper {
@@ -358,10 +357,6 @@ ul li a:hover {
     background-color: var(--blue);
 }
 
-#skills .content-wrapper {
-    width: 80%;
-}
-
 .language-wrapper ul {
     display: flex;
     justify-content: space-around;
@@ -369,7 +364,7 @@ ul li a:hover {
 }
 
 #skills ul li {
-    padding: 1em;
+    padding: 1.25em;
 }
 
 #skills i {
@@ -379,14 +374,6 @@ ul li a:hover {
 #skills i[title]:hover {
     content: attr(title);
     position: initial;
-}
-
-#skills a {
-    font-size: initial;
-}
-
-#skills a i:hover {
-    color: var(--highlight);
 }
 
 /* Projects */
@@ -428,7 +415,7 @@ ul li a:hover {
 
 .portfolio-piece figure img {
     border-radius: 5px;
-    width: 97%;
+    width: 100%;
 }
 
 .project-description {
@@ -436,25 +423,25 @@ ul li a:hover {
 }
 
 /* ---------- FOOTER ---------- */
-footer .contact-wrapper {
+
+.contact-wrapper {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-flow: row wrap;
+    align-items: center;
+    flex-direction: column;
 }
-
 footer .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 60%;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 footer span {
     color: var(--light-blue);
     padding: 3px;
-}
-
-footer .social-icons {
-    display: flex;
-    justify-content: space-around;
 }
 
 #connect i {
@@ -471,12 +458,11 @@ footer .social-icons {
 /* -------- Contact Form -------- */
 
 .contact-form {
-    padding: 1.75em;
     width: 95%;
+    margin-bottom: 15px;
 }
 
-form {
-    padding: .25em;   
+form {   
     text-align: center;
 }
 
@@ -503,6 +489,7 @@ form ::placeholder {
     background-color: var(--light-blue);
     border-radius: 10px;
     color:var(--blue);
+    cursor: pointer;
     font-weight: 900;
     border: none;
     width: 50%;
@@ -554,19 +541,16 @@ form ::placeholder {
         padding: 1em 3em 0 3em;
     }
 
-    footer .contact-info {
-        width: 50%;
+    .portfolio-piece figure img {
+        width: 95%;
+    }
+    
+    .project-description {
+        width: 85%;
     }
 
-    footer .social-icons {
-        display: flex;
-        justify-content: space-around;
-        flex-flow: column wrap;
-        margin: 0;
-    }
-
-    footer .social-icons i {
-        padding-bottom: 30px;
+    footer .contact-info i {
+        padding-bottom: 15px;
     }
 
     #full-name, 
@@ -574,6 +558,20 @@ form ::placeholder {
         display: inline;
         width: 46.25%;
         margin: 3px;
+    }
+}
+
+/* ------ Additional Breakpoint ------ */
+
+@media only screen and (min-width: 900px) {
+    .portfolio-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .portfolio-piece {
+        width: 48%;
     }
 }
 
@@ -630,18 +628,34 @@ form ::placeholder {
         height: auto;
     }
 
-    .portfolio-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .portfolio-piece figure img {
+        width: 100%;
+    }
+    
+    .project-description {
+        width: 90%;
     }
 
-    .portfolio-piece {
-        width: 47%;
+    .contact-wrapper {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 80%;
+    }
+
+    .contact-info a {
+        padding: 1.25em;
     }
 
     .contact-form {
-        width: 70%;
+        width: 90%;
+        margin-bottom: 30px;
     }
 
     #full-name, 
